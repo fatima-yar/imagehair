@@ -20,7 +20,7 @@ export default {
       spacing: {
         55: '55%',
         35: '135px',
-        te: '850px',
+        te: '720px',
       },
     },
   },
