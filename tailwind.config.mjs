@@ -12,7 +12,7 @@ export default {
         lightGrey: '#EEEEEE',
         brightPink: '#FF71B5',
         dirtyPink: '#c27fbe',
-        darkGrey: '#2c2c2c',
+        darkGrey: '#252525',
       },
       backgroundImage: {
         gradientPink: 'linear-gradient(to right, #9B797A, #FFEAE5)',
