@@ -1,0 +1,16 @@
+---
+import BookingButton from '../components/UI/BookingButton.astro'
+---
+<div class="bg-gradientPink flex flex-col text-darkGrey sm:flex-row justify-between">
+  <!-- For small screens, reverse the order of flex columns -->
+  <div class="order-2 sm:order-1 sm:w-te sm:pl-24">
+    <p class="text-4xl sm:text-6xl font-cantora pt-10 sm:pt-20">Hairdressing With a Purpose!</p>
+    <p class="lg:pt-16 sm:pt-4 text-base sm:text-lg"> We Believe our Reputation is only as good as our last Hair service, Working together as a Team WE ensure our Clients always LOOK and FEEL Magnificent!
+      Through this our Business will Continue to be a Leader in Hair Design!</p>
+      <div class=" pt-16">
+        <BookingButton/>
+      </div>
+  </div>
+  <img src="./heroimage.png" class="order-1 sm:order-2 sm:pr-24 sm:w-auto sm:max-w-none w-80"/>
+
+</div>
