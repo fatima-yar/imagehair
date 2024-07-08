@@ -3,77 +3,171 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro'
 import Header from '../components/Header.astro'
 import Menu from '../components/UI/Menu.astro'
+import data from '../services.json'
 
-function Scroll() {
-  document.querySelectorAll('menu').forEach((anchor) => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-
-      const targetId = this.getAttribute('href').substring(1)
-      const targetSection = document.getElementById(targetId)
-
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop - 20, // Adjust if you have a fixed header or additional spacing
-          behavior: 'smooth',
-        })
-      }
-    })
-  })
-}
 
 ---
 
 <Layout title="Services">
+  <Header/>
+  <Navbar/>
+  <Menu/>
 	<main>
-    <Header/>
-    <Navbar/>
-    <Menu/>
-    <div class="menu">
+  <div class="mx-auto max-w-screen-sm bg-white shadow-md rounded-lg p-6 mb-8">
     <div id="style-cuts" class="">
-      <h2>Style Cuts</h2>
-      <ul>
-        <li>haircut</li>
-      </ul>
+      <h2 class="text-2xl font-bold mb-4">Style Cuts</h2>
+        <ul class="space-y-2">
+          {data.style.map((item) => <li class="p-4 rounded-lg shadow-md">
+            <div class="flex justify-between items-center" >
+            <span class="flex-grow font-medium">{item.service} </span>
+            <span class="ml-4 font-semibold">{item.price}</span>
+          </div></li>
+          )}  
+        </ul>
+        <div class="my-8 border-b border-gray-200"></div>
+        <h3 class="text-xl font-bold mb-4">Pensioner Cuts</h3>
+        <ul class="space-y-2">
+          {data.pensionerStyle.map((item) => <li class="p-4 rounded-lg shadow-md">
+            <div class="flex justify-between items-center" >
+            <span class="flex-grow font-medium">{item.service} </span>
+            <span class="ml-4 font-semibold">{item.price}</span>
+          </div></li>
+          )}  
+        </ul>
+        <div class="my-8 border-b border-gray-200"></div>
+        <h3 class="text-xl font-bold mb-4">Children's Cuts</h3>
+        <ul class="space-y-2">
+          {data.children.map((item) => <li class="p-4 rounded-lg shadow-md">
+            <div class="flex justify-between items-center" >
+            <span class="flex-grow font-medium">{item.service} </span>
+            <span class="ml-4 font-semibold">{item.price}</span>
+          </div></li>
+          )}  
+        </ul>
+        <div class="my-8 border-b border-gray-200"></div>
     </div>
     <div id="colour" class="">
-      <h2>Colour</h2>
-      <ul>
-        <li>colour</li>
+      <h2 class="text-2xl font-bold mb-4">Colour</h2>
+      <ul class="space-y-2">
+        {data.colour.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
+      <h3 class="text-xl font-bold mb-4">Pensioner Colour</h3>
+      <ul class="space-y-2">
+        {data.pensionerColour.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
+      </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
     <div id="creative-colour" class="">
-      <h2>Creative Colour</h2>
-      <ul>
-        <li>creative colour</li>
+      <h2 class="text-2xl font-bold mb-4">Creative Colour</h2>
+      <ul class="space-y-2">
+        {data.creativeColour.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
+      <h3 class="text-xl font-bold mb-4">Toner</h3>
+      <ul class="space-y-2">
+        {data.toner.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
+      </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
-    <div id="Foils" class="">
-      <h2>Foils</h2>
-      <ul>
-        <li>partial</li>
-        <li>half</li>
-        <li>full</li>
+    <div id="foils" class="">
+      <h2 class="text-2xl font-bold mb-4">Foils</h2>
+      <ul class="space-y-2">
+        {data.foils.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
+      <h3 class="text-xl font-bold mb-4">Pensioner Foils</h3>
+      <ul class="space-y-2">
+        {data.pensionerFoils.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
+      </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
     <div id="treatment" class="">
-      <h2>Treatment</h2>
-      <ul>
-        <li>treatment</li>
+      <h2 class="text-2xl font-bold mb-4">Treatment</h2>
+      <ul class="space-y-2">
+        {data.treatment.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
+      <h3 class="text-xl font-bold mb-4">Keratin Treatment</h3>
+      <ul class="space-y-2">
+        {data.keratin.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
+      </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
     <div id="perm" class="">
-      <h2>Perm</h2>
-      <ul>
-        <li>perm</li>
+      <h2 class="text-2xl font-bold mb-4">Perm</h2>
+      <ul class="space-y-2">
+        {data.perm.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
+      <h3 class="text-xl font-bold mb-4">Pensioner Perm</h3>
+      <ul class="space-y-2">
+        {data.pensionerPerm.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
+      </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
     <div id="hair-up" class="">
-      <h2>Hair Up
+      <h2 class="text-2xl font-bold mb-4">Hair Up
       </h2>
-      <ul>
-        <li>updo</li>
+      <ul class="space-y-2">
+        {data.hairUp.map((item) => <li class="p-4 rounded-lg shadow-md">
+          <div class="flex justify-between items-center" >
+          <span class="flex-grow font-medium">{item.service} </span>
+          <span class="ml-4 font-semibold">{item.price}</span>
+        </div></li>
+        )}  
       </ul>
+      <div class="my-8 border-b border-gray-200"></div>
     </div>
   </div>
 	</main>
