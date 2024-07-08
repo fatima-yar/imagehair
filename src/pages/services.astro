@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Header from '../components/Header.astro'
+import Menu from '../components/UI/Menu.astro'
+
+function Scroll() {
+  document.querySelectorAll('menu').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const targetId = this.getAttribute('href').substring(1)
+      const targetSection = document.getElementById(targetId)
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 20, // Adjust if you have a fixed header or additional spacing
+          behavior: 'smooth',
+        })
+      }
+    })
+  })
+}
+
+---
+
+<Layout title="Services">
+	<main>
+    <Header/>
+    <Navbar/>
+    <Menu/>
+    <div class="menu">
+    <div id="style-cuts" class="">
+      <h2>Style Cuts</h2>
+      <ul>
+        <li>haircut</li>
+      </ul>
+    </div>
+    <div id="colour" class="">
+      <h2>Colour</h2>
+      <ul>
+        <li>colour</li>
+      </ul>
+    </div>
+    <div id="creative-colour" class="">
+      <h2>Creative Colour</h2>
+      <ul>
+        <li>creative colour</li>
+      </ul>
+    </div>
+    <div id="Foils" class="">
+      <h2>Foils</h2>
+      <ul>
+        <li>partial</li>
+        <li>half</li>
+        <li>full</li>
+      </ul>
+    </div>
+    <div id="treatment" class="">
+      <h2>Treatment</h2>
+      <ul>
+        <li>treatment</li>
+      </ul>
+    </div>
+    <div id="perm" class="">
+      <h2>Perm</h2>
+      <ul>
+        <li>perm</li>
+      </ul>
+    </div>
+    <div id="hair-up" class="">
+      <h2>Hair Up
+      </h2>
+      <ul>
+        <li>updo</li>
+      </ul>
+    </div>
+  </div>
+	</main>
+</Layout>
