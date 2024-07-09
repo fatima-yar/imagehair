@@ -1,8 +1,7 @@
-
 ---
-
+import data from '../../services.json'
 ---
-<div class="bg-gradientDown text-darkGrey rounded-lg pb-12">
+<!-- <div class="bg-gradientDown text-darkGrey rounded-lg pb-12">
 <ul class="pl-4 py-6 space-y-6">
 <li><a class="text-black hover:text-brightPink" href="#Style">Style Cuts</a></li>
 <li><a class="text-black hover:text-brightPink" href="#Colour">Colour</a></li>
@@ -12,4 +11,12 @@
 <li><a class="text-black hover:text-brightPink" href="#Perm">Perm</a></li>
 <li><a class="text-black hover:text-brightPink" href="#hair-up">Hair Up</a></li>
 <ul/>
-</div>
+</div> -->
+
+
+<div class="bg-gradientDown text-darkGrey rounded-lg pb-12">
+{Object.keys(data).map((category, index) => (
+<ul class="pl-4 py-2 space-y-6">
+<li><a class="text-black hover:text-brightPink" href={`#${category}`}>{category}</a></li>
+</ul>
+))}
