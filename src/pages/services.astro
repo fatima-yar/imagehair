@@ -16,11 +16,10 @@ import ServiceList from '../components/ServiceList.astro'
   <Header/>
   <Navbar/>
 	<main class="flex">
-    <div class="sticky top-16 left-0 w-1/4 h-full bg-gray-200 p-4 overflow-y-auto " style={{ minWidth: '150px', maxWidth: '300px' }}>
-    <!-- <div class="fixed top-0 left-0 w-1/4 h-full bg-gray-200 p-4 overflow-y-auto"> -->
+    <div class="sticky top-16 left-0 w-1/4 h-full p-4 overflow-y-auto " style={{ minWidth: '150px', maxWidth: '300px' }}>
     <Menu/>
     </div>
-    <div class="flex-1 ml-1/4 p-2 overflow-y-auto">
+    <div class="flex-1 ml-1/4 overflow-y-auto">
       <ServiceList/>
     </div>
   </main>
