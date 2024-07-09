@@ -1,18 +1,8 @@
 ---
 import data from '../../services.json'
+import ToTopButton from '../../components/UI/ToTopButton.astro'
+import BookingButton from '../../components/UI/BookingButton.astro'
 ---
-<!-- <div class="bg-gradientDown text-darkGrey rounded-lg pb-12">
-<ul class="pl-4 py-6 space-y-6">
-<li><a class="text-black hover:text-brightPink" href="#Style">Style Cuts</a></li>
-<li><a class="text-black hover:text-brightPink" href="#Colour">Colour</a></li>
-<li><a class="text-black hover:text-brightPink" href="#Creative Colour">Creative Colour</a></li>
-<li><a class="text-black hover:text-brightPink" href="#Foils">Foils</a></li>
-<li><a class="text-black hover:text-brightPink" href="#Treatment">Treatment</a></li>
-<li><a class="text-black hover:text-brightPink" href="#Perm">Perm</a></li>
-<li><a class="text-black hover:text-brightPink" href="#hair-up">Hair Up</a></li>
-<ul/>
-</div> -->
-
 
 <div class="bg-gradientDown text-darkGrey rounded-lg pb-12">
 {Object.keys(data).map((category, index) => (
@@ -20,3 +10,8 @@ import data from '../../services.json'
 <li><a class="text-black hover:text-brightPink" href={`#${category}`}>{category}</a></li>
 </ul>
 ))}
+<div class="flex flex-col items-center justify-center mt-8">
+<ToTopButton/>
+<BookingButton/>
+</div>
+</div>
