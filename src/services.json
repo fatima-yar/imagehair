@@ -1,11 +1,14 @@
 {
   "style": [
     { "service": "Woman's Cut", "price": "$75" },
-    { "service": "Woman's Cut & Blow Wave", "price": "$90" },
-    { "service": "Woman's Cut and Blow Wave - Long Hair", "price": "$115" },
+    { "service": "Woman's Cut & Blow Wave",
+     "options":[ 
+      {"service": "Short & Medium", "price": "$90" },
+      { "service": "Long", "price": "$115" }
+    ]},
     { "service": "Fringe Trim", "price": "$10" },
-    { "service": "Blow Wave Set - Starting From", "price": "$50" },
-    { "service": "Dry Off & Straighten From", "price": "$60" },
+    { "service": "Blow Wave Set", "from":"from", "price": "$50" },
+    { "service": "Dry Off & Straighten", "from":"from", "price": "$60" },
     { "service": "Men's Cut", "price": "$49" },
     { "service": "Clipper Shave", "price": "$30" }
   ],
@@ -24,12 +27,18 @@
   ],
   "colour": [
     { "service": "Semi-Permanent", "price": "$98" },
-    { "service": "Retouch Roots - Short", "price": "$115" },
-    { "service": "Retouch Roots - Medium", "price": "$130" },
-    { "service": "Retouch Roots - Long", "price": "$140" },
-    { "service": "Refresh Roots to Ends - Short", "price": "$130" },
-    { "service": "Refresh Roots to Ends - Medium", "price": "$145" },
-    { "service": "Refresh Roots to Ends - Long", "price": "$155" },
+    { "service": "Retouch Roots",
+    "options":[
+    { "service": "Short", "price": "$115" },
+    { "service": "Medium", "price": "$130" },
+    { "service": "Long", "price": "$140" }
+  ]},
+    { "service": "Refresh Roots to Ends", 
+    "options":[
+    { "service": "Short", "price": "$130" },
+    { "service": "Medium", "price": "$145" },
+    { "service": "Long", "price": "$155" }
+    ]},
     { "service": "Colour Toner", "price": "$65" },
     { "service": "Cap Highlights", "price": "$135" }
   ],
@@ -42,22 +51,24 @@
     { "service": "Full Head Foils and Root Retouch", "price": "$165" }
   ],
   "creativeColour": [
-    { "service": "Bleach and Tone Roots (Based on 2cm Roots) - Starting From", "price": "$190" },
-    { "service": "Bleach and Tone Refresh - Roots to End - Starting From", "price": "$210" },
+    { "service": "Bleach and Tone", "options": [
+    { "service": "Roots (Based on 2cm Roots)", "from":"from", "price": "$190" },
+    { "service": "Refresh - Roots to End", "from":"from", "price": "$210" }
+    ]},
     { "service": "Colour Clean Out (Per Application)", "price": "$85" },
-    { "service": "Balayage/Ombre (By Quotation) - Starting From", "price": "$320" },
-    { "service": "Colour Correction starting from (Per Application)", "price": "$85" }
+    { "service": "Balayage/Ombre (By Quotation)", "from":"from", "price": "$320" },
+    { "service": "Colour Correction (Per Application)", "from":"from", "price": "$85" }
   ],
   "toner": [
     { "service": "Toner", "price": "$65" },
-    { "service": "New Growth with Foils - Starting From", "price": "$195" },
-    { "service": "Refresh with Foils - Starting From", "price": "$210" }
+    { "service": "New Growth with Foils", "from":"from", "price": "$195" },
+    { "service": "Refresh with Foils", "from":"from", "price": "$210" }
   ],
   "foils": [
     { "service": "1/4 Partial Foils", "price": "$125" },
     { "service": "Half Head Foils", "price": "$140" },
     { "service": "3/4 Head Foils", "price": "$150" },
-    { "service": "Full Head Foils - From", "price": "$165" }
+    { "service": "Full Head Foils", "from":"from", "price": "$165" }
   ],
   "pensionerFoils": [
     { "service": "Top Section Foils", "price": "$70" },
@@ -68,20 +79,26 @@
   "treatment": [
     { "service": "Moisture Treatment + Dry Off", "price": "$55" },
     { "service": "Intense Treatment + Blow Wave", "price": "$80" },
-    { "service": "Olaplex Treatment + Dry Off", "price": "$75" },
-    { "service": "Olaplex treatment + Blow Wave & Straighten", "price": "$105" },
-    { "service": "Olaplex in Colour Treatment", "price": "$55" }
+    { "service": "Olaplex Treatment", 
+    "options":[
+    { "service": "Dry Off", "price": "$75" },
+    { "service": "Blow Wave & Straighten", "price": "$105" },
+    { "service": "With Colour Treatment", "price": "$55" }
+    ]}
   ],
   "keratin": [
-    { "service": "Keratin 3 - 5 Months - From", "price": "$305" },
+    { "service": "Keratin 3 - 5 Months", "from":"from", "price": "$305" },
     { "service": "Keratin De-Frizz - Upto 8 Weeks", "price": "$140" },
     { "service": "Keratin Surcharge", "price": "$43" }
   ],
   "perm": [
     { "service": "Partial Perm", "price": "$105" },
-    { "service": "Short Hair Perm", "price": "$115" },
-    { "service": "Medium Hair Perm", "price": "$125" },
-    { "service": "Long Hair Perm", "price": "$150" }
+    { "service": "Full Perm", 
+    "options":[
+    { "service": "Short", "price": "$115" },
+    { "service": "Medium", "price": "$125" },
+    { "service": "Long", "price": "$150" }
+    ]}
   ],
   "pensionerPerm": [
     { "service": "Top Section Perm", "price": "$75" },
@@ -91,8 +108,8 @@
   ],
   "hairUp": [
     { "service": "Standard Hair Up", "price": "$120" },
-    { "service": "Special Occasion/Bridal/Bridemaid - From", "price": "$150" },
+    { "service": "Special Occasion/Bridal/Bridesmaid", "from":"from", "price": "$150" },
     { "service": "Flower Girl", "price": "$80" },
-    { "service": "Scholl Ball - From", "price": "$120" }
+    { "service": "School Ball", "from":"from", "price": "$120" }
   ]
 }
