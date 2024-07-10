@@ -1,15 +1,22 @@
 ---
 import BookingButton from '../components/UI/BookingButton.astro'
 ---
-<div class="bg-gradientPink flex flex-col text-darkGrey sm:flex-row md:flex-row justify-between">
-  <!-- For small and medium screens, reverse the order of flex columns -->
-  <div class="order-2 sm:order-1 md:order-1 sm:pl-28">
-    <p class="md:text-xl sm:text-2xl lg:text-6xl font-cantora pt-10 sm:pt-20">Hairdressing With a Purpose!</p>
-    <p class="lg:w-te lg:pt-8 sm:pt-4 text-base lg:text-lg md:text-sm sm:text-sm">We Believe our Reputation is only as good as our last Hair service, Working together as a Team WE ensure our Clients always LOOK and FEEL Magnificent!
-      Through this our Business will Continue to be a Leader in Hair Design!</p>
-    <div class="pt-8">
-      <BookingButton />
+
+<header class="bg-gradientPink">
+  <div class="container px-0 py-0 mx-auto">
+    <div class="lg:flex">
+      <div class="w-full lg:w-1/2">
+        <div class="lg:max-w-full">
+          <h1 class="text-3xl font-cantora text-darkGrey lg:text-6xl pt-20">Hairdressing With a Purpose!</h1>
+          <p class="mt-3 text-lg text-darkGrey pt-10">We Believe our Reputation is only as good as our last Hair service, Working together as a Team WE ensure our Clients always LOOK and FEEL Magnificent!</p>
+          <div class="pt-4 lg:pt-10">
+          <BookingButton />
+        </div></div>
+      </div>
+
+      <div class="flex justify-end mt-6 lg:mt-0 w-full lg:w-1/2">
+        <img class="w-full h-full lg:max-w-xl" src="./heroimage.png" alt="Catalogue-pana.svg">
+      </div>
     </div>
   </div>
-  <img src="./heroimage.png" class="order-1 sm:order-2 md:order-2 sm:pr-24 md:max-w-md lg:max-w-lg"/>
-</div>
+</header>
