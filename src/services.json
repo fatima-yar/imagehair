@@ -1,0 +1,116 @@
+{
+  "Style": [
+    { "service": "Woman's Cut", "price": "$75" },
+    { "service": "Woman's Cut & Blow Wave",
+     "options":[ 
+      {"service": "Short & Medium", "price": "$90" },
+      {"service": "Long", "price": "$115" }
+    ]},
+    { "service": "Fringe Trim", "price": "$10" },
+    { "service": "Blow Wave Set", "from":"from", "price": "$50" },
+    { "service": "Dry Off & Straighten", "from":"from", "price": "$60" },
+    { "service": "Men's Cut", "price": "$49" },
+    { "service": "Clipper Shave", "price": "$30" }
+  ],
+  "Children": [
+    { "service": "Under 5 (No Shampoo)", "price": "$35" },
+    { "service": "Primary Cut", "price": "$43" },
+    { "service": "Intermediate Cut", "price": "$47" },
+    { "service": "College Girls", "price": "$63" },
+    { "service": "College Boys", "price": "$49" }
+  ],
+  "Colour": [
+    { "service": "Semi-Permanent", "price": "$98" },
+    { "service": "Retouch Roots",
+    "options":[
+      { "service": "Short", "price": "$115" },
+      { "service": "Medium", "price": "$130" },
+      { "service": "Long", "price": "$140" }
+      ]},
+      { "service": "Refresh Roots to Ends", 
+      "options":[
+        { "service": "Short", "price": "$130" },
+        { "service": "Medium", "price": "$145" },
+        { "service": "Long", "price": "$155" }
+        ]},
+        { "service": "Colour Toner", "price": "$65" },
+        { "service": "Cap Highlights", "price": "$135" }
+      ],
+      "Creative Colour": [
+        { "service": "Bleach and Tone", "options": [
+          { "service": "Roots (Based on 2cm Roots)", "from":"from", "price": "$190" },
+          { "service": "Refresh - Roots to End", "from":"from", "price": "$210" }
+          ]},
+          { "service": "Colour Clean Out (Per Application)", "price": "$85" },
+          { "service": "Balayage/Ombre (By Quotation)", "from":"from", "price": "$320" },
+          { "service": "Colour Correction (Per Application)", "from":"from", "price": "$85" }
+        ],
+        "Toner": [
+          { "service": "Toner", "price": "$65" },
+          { "service": "New Growth with Foils", "from":"from", "price": "$195" },
+          { "service": "Refresh with Foils", "from":"from", "price": "$210" }
+        ],
+        "Foils": [
+          { "service": "1/4 Partial Foils", "price": "$125" },
+          { "service": "Half Head Foils", "price": "$140" },
+          { "service": "3/4 Head Foils", "price": "$150" },
+          { "service": "Full Head Foils", "from":"from", "price": "$165" }
+        ],
+        "Treatment": [
+          { "service": "Moisture Treatment + Dry Off", "price": "$55" },
+          { "service": "Intense Treatment + Blow Wave", "price": "$80" },
+          { "service": "Olaplex Treatment", 
+          "options":[
+            { "service": "Dry Off", "price": "$75" },
+            { "service": "Blow Wave & Straighten", "price": "$105" },
+            { "service": "With Colour Treatment", "price": "$55" }
+            ]}
+          ],
+          "Keratin": [
+            { "service": "Keratin 3 - 5 Months", "from":"from", "price": "$305" },
+            { "service": "Keratin De-Frizz - Upto 8 Weeks", "price": "$140" },
+            { "service": "Keratin Surcharge", "price": "$43" }
+          ],
+          "Perm": [
+            { "service": "Partial Perm", "price": "$105" },
+            { "service": "Full Perm", 
+            "options":[
+              { "service": "Short", "price": "$115" },
+              { "service": "Medium", "price": "$125" },
+              { "service": "Long", "price": "$150" }
+              ]}
+            ],
+            "Hair Up": [
+              { "service": "Standard Hair Up", "price": "$120" },
+              { "service": "Special Occasion/Bridal/Bridesmaid", "from":"from", "price": "$150" },
+              { "service": "Flower Girl", "price": "$80" },
+              { "service": "School Ball", "from":"from", "price": "$120" }
+            ],
+            "Pensioner Style": [
+              { "service": "Blow Wave/Set", "price": "$48" },
+              { "service": "Woman's Cut Only", "price": "$63" },
+              { "service": "Woman's Cut and Blow Wave", "price": "$76" },
+              { "service": "Men's Cut", "price": "$38" }
+            ],
+            "Pensioner Colour": [
+              { "service": "Semi Permanent", "price": "$75" },
+              { "service": "Permanent Tint Retouch", "price": "$85" },
+              { "service": "Permanent Tint - Roots to End", "price": "$95" },
+              { "service": "1/4 Foils and Root Retouch", "price": "$125" },
+              { "service": "1/2 Head Foils and Root Retouch", "price": "$145" },
+              { "service": "Full Head Foils and Root Retouch", "price": "$165" }
+            ],
+            "Pensioner Foils": [
+              { "service": "Top Section Foils", "price": "$70" },
+              { "service": "1/2 Head Foils", "price": "$110" },
+              { "service": "3/4 Head Foils", "price": "$120" },
+              { "service": "Full Head Foils", "price": "$130" }
+            ],
+        "Pensioner Perm": [
+          { "service": "Top Section Perm", "price": "$75" },
+          { "service": "1/2 Head Perm", "price": "$96" },
+          { "service": "3/4 Head Perm", "price": "$103" },
+          { "service": "Full Head Perm", "price": "$117" }
+        ]
+      }
+      

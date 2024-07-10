@@ -1,0 +1,53 @@
+---
+import data from '../services.json'
+
+interface ServiceOption {
+  service: string;
+  price: string;
+}
+
+interface Service {
+  service: string;
+  price?: string;
+  from?: string;
+  options?: ServiceOption[];
+}
+
+interface Data {
+  [key: string]: Service[];
+}
+
+const servicesData: Data = data
+
+---
+
+
+
+<div  class="mx-auto max-w-screen-sm bg-white">
+    {Object.keys(data).map((category, index) => (
+    <div id={category} class="pb-4 mb-4 border-b-2 border-darkPink px-4">
+      <h2 class="text-2xl font-bold mb-2 pt-2 text-darkPink">{category}</h2>
+    <ul class="space-y-3  text-darkGrey">
+      {servicesData[category].map((service, idx) => (
+         <li>
+        <div class="flex justify-between items-center">
+        <span class="flex-grow font-medium">{service.service} </span>
+        {service.from && (<span class="ml-4 italic text-darkPink">{service.from}</span>)}
+        <span class="ml-4 font-semibold">{service.price}</span>
+      </div>
+      {service.options && (
+        <ul class="space-y-2">
+          {service.options.map((option) => (
+            <li class="flex justify-between items-center ml-8 text-darkGrey">
+              <span class="flex-grow font-medium"> {option.service}</span>
+              <span class="ml-4 font-semibold">{option.price}</span>
+            </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>

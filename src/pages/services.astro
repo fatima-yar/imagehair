@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'
+import Header from '../components/Header.astro'
+import Menu from '../components/UI/Menu.astro'
+import ServiceList from '../components/ServiceList.astro'
+import BookingButton from '../components/UI/BookingButton.astro'
+
+
+
+
+---
+
+<Layout title="Services">
+  <Header/>
+  <Navbar/>
+	<main class="flex">
+    <div class="sticky top-16 left-0 lg:w-full h-full p-4 overflow-y-auto " style={{ minWidth: '100px', maxWidth: '300px' }}>
+    <Menu/>
+    </div>
+    <div class="flex-1 ml-1/4 overflow-y-auto">
+      <ServiceList/>
+    </div>
+    <div class="fixed bottom-25 right-0 p-4">
+      <BookingButton />
+    </div>
+  </main>
+</Layout>
+
+

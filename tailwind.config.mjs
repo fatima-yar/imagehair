@@ -16,7 +16,9 @@ export default {
       },
       backgroundImage: {
         gradientPink: 'linear-gradient(to right, #9B797A, #FFEAE5)',
+        gradientDown: 'linear-gradient(to bottom, #9B797A, #FFEAE5, #FFFFFF)',
       },
+
       spacing: {
         55: '55%',
         35: '135px',
