@@ -1,7 +1,10 @@
----
 
 ---
-<a href="/" >
-  <img src="./logo.png" alt="logo" class="h-16 lg:h-20">
+const { size = "h-16 w-16" } = Astro.props;
+---
+
+<a href="/">
+  <img src="./logo.png" alt="logo" class={size} />
 </a>
 
+<!-- h-16 lg:h-20 -->

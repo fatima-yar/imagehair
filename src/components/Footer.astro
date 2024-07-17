@@ -1,0 +1,20 @@
+---
+import GoogleMap from "./UI/GoogleMap.astro"
+import Logo from "./UI/Logo.astro"
+import Opening from "./UI/Opening.astro"
+---
+
+  <div class="flex flex-col lg:flex-row bg-white pt-8 pb-8 lg:pl-8 shadow-[inset_0_-4px_8px_rgba(0,0,0,0.5)]">
+    <div class="mb-4 lg:mb-0 pl-4 mx-auto">
+      <Opening/>
+    </div>
+    <div class="flex mx-auto justify-center mb-4 lg:mb-0">
+      <GoogleMap/>
+    </div>
+    <div class="lg:pr-16 flex lg:ml-auto justify-end flex-col items-center">
+      <Logo size="h-40 w-40"/>
+      <span class="text-center pt-4">2 Dunrobin Place Cnr Pakuranga Road, Halfmoon Bay</span>
+   
+  </div>
+
+
