@@ -1,0 +1,21 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+
+import Navbar from '../components/Navbar.astro'
+import Aboutus from '../components/UI/About/Aboutus.astro';
+import Coverimage from '../components/UI/About/Coverimage.astro'
+import Team from '../components/UI/About/Team.astro'
+---
+
+
+<Layout title="Services">
+  <Navbar/>
+  <div class="bg-darkPink">
+  <Coverimage/>
+</div>
+	<main >
+<Aboutus/>
+<Team/>
+  </main>
+</Layout>
