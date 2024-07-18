@@ -2,9 +2,10 @@
 import GoogleMap from "./UI/GoogleMap.astro"
 import Logo from "./UI/Logo.astro"
 import Opening from "./UI/Opening.astro"
+const { id } = Astro.props;
 ---
 
-  <div class="flex flex-col lg:flex-row bg-white pt-8 pb-8 lg:pl-8 shadow-[inset_0_-4px_8px_rgba(0,0,0,0.5)]">
+  <div id={id} class="flex flex-col lg:flex-row bg-white pt-8 pb-8 lg:pl-8 shadow-[inset_0_-4px_8px_rgba(0,0,0,0.5)]">
     <div class="mb-4 lg:mb-0 pl-4 mx-auto">
       <Opening/>
     </div>

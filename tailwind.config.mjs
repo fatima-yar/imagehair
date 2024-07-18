@@ -19,7 +19,9 @@ export default {
         gradientPink: 'linear-gradient(to right, #9B797A, #FFEAE5)',
         gradientDown: 'linear-gradient(to bottom, #9B797A, #FFEAE5, #FFFFFF)',
       },
-
+      screens: {
+        'md-lg': { min: '1020px', max: '1250px' },
+      },
       spacing: {
         55: '55%',
         35: '135px',
