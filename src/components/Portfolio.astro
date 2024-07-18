@@ -1,0 +1,30 @@
+---
+import data from '../portfolio.json'
+
+interface Portfolio {
+  url: string;
+}
+interface Data {
+  [key: string]: Portfolio[];
+}
+
+const portfolioData: Data = data
+---
+
+<div>
+  {Object.keys(data).map((category,i)=>
+  <div id={category}>{category}
+  <ul>
+    {portfolioData[category].map((pic,i)=>(
+
+    <li>
+{pic.url}
+    </li>
+
+    ))}
+  </ul>
+  
+  </div>
+  )
+  }
+</div>

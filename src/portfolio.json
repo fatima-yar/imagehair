@@ -1,16 +1,16 @@
 {
   "Style": [
-    { "service": "1"},
-    { "service": "2"},
-    { "service": "3"},
-    { "service": "4"}
+    { "url": "1"},
+    { "url": "2"},
+    { "url": "3"},
+    { "url": "4"}
 
   ],
   "Colour": [
-    { "service": "1" },
-    { "service": "2" },
-    { "service": "3" },
-    { "servicer": "4" }
+    { "url": "1" },
+    { "url": "2" },
+    { "url": "3" },
+    { "url": "4" }
   ]
 
         
