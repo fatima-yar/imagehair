@@ -1,0 +1,38 @@
+{
+  "HairCut": [
+    { "url": "/cut1.jpg"},
+    { "url": "/cut2.jpg"},
+    { "url": "/cut3.jpg"},
+    { "url": "/cut4.jpg"},
+    { "url": "/cut5.jpg"},
+    { "url": "/cut6.jpg"},
+    { "url": "/cut7.jpg"},
+    { "url": "/cut8.jpg"}
+
+  ],
+  "HairColour": [
+    { "url": "/color1.jpg" },
+    { "url": "/color2.jpg" },
+    { "url": "/color3.jpg" },
+    { "url": "/color4.jpg" },
+    { "url": "/color5.jpg" },
+    { "url": "/color6.jpg" }
+
+  
+  ],
+  "Hair Treatment": [
+    { "url": "/treatment1.jpg" },
+    { "url": "/treatment2.jpg" },
+    { "url": "/treatment3.jpg" },
+    { "url": "/treatment4.jpg" }
+ 
+  ],
+  "Perm": [
+    { "url": "/perm1.jpg" },
+    { "url": "/perm2.jpg" },
+    { "url": "/perm3.jpg" },
+    { "url": "/perm4.jpg" }
+  ]
+        
+      }
+      
