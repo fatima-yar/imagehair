@@ -8,7 +8,7 @@ Our approach began with a planning phase, where we consulted with the salon team
 We utilized [Figma](https://www.figma.com/design/wqZ5bYiVh69Apop9lk6wiE/Image-Hair---V1?node-id=43-417&t=UifYyYsPrDxR7VeE-0) for designing and [Canva](https://www.canva.com/design/DAGKB5AuSTw/yTV9Y4Y7-rx7fTa-5HPC2g/edit?) for breaking down each component, ensuring a cohesive and visually appealing design. Our design process involved creating wireframes, mockups, and high-fidelity prototypes to bring the salon's vision to life.
 
 ## Technical Implementation
-After finalizing the design, we chose Astro as our front-end framework, paired with Tailwind CSS, to build the website. We were drawn to Astro's benefits, including its speed, scalability, and ease of use. We created a GitHub repository and managed our project using GitHub Project, where we tracked progress, assigned tasks, and collaborated on code changes.
+After finalizing the design, we chose Astro as our front-end framework, paired with Tailwind CSS, to build the website. We were drawn to Astro's benefits, including its speed, scalability, and ease of use. We created a GitHub repository and managed our project using [GitHub Project](https://github.com/users/fatima-yar/projects/1), where we tracked progress, assigned tasks, and collaborated on code changes.
 
 ## Development
 With Astro and Tailwind set up, we began building individual UI components, which we then combined to create pages. We employed JSON for mapping services, resulting in an amazing outcome. Throughout the development process, we ensured responsiveness, accessibility, and a seamless user experience. Our website is fully responsive, ensuring an optimal viewing experience across various devices and screen sizes.
