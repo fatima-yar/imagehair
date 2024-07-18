@@ -1,54 +1,17 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to our project development project! Our team of three is excited to share our journey in creating a stunning online presence for a hairdresser salon. We're passionate about delivering a top-notch website that meets the salon's needs and exceeds their expectations.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Project Overview
+Our approach began with a planning phase, where we consulted with the salon team to understand their requirements and preferences. We asked questions, listened attentively, and took notes to ensure we captured their vision. With their input, we started designing components and interfaces tailored to their needs.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Design and Prototyping
+We utilized [Figma](https://www.figma.com/design/wqZ5bYiVh69Apop9lk6wiE/Image-Hair---V1?node-id=43-417&t=UifYyYsPrDxR7VeE-0) for designing and [Canva](https://www.canva.com/design/DAGKB5AuSTw/yTV9Y4Y7-rx7fTa-5HPC2g/edit?) for breaking down each component, ensuring a cohesive and visually appealing design. Our design process involved creating wireframes, mockups, and high-fidelity prototypes to bring the salon's vision to life.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Technical Implementation
+After finalizing the design, we chose Astro as our front-end framework, paired with Tailwind CSS, to build the website. We were drawn to Astro's benefits, including its speed, scalability, and ease of use. We created a GitHub repository and managed our project using GitHub Project, where we tracked progress, assigned tasks, and collaborated on code changes.
 
-## 🚀 Project Structure
+## Development
+With Astro and Tailwind set up, we began building individual UI components, which we then combined to create pages. We employed JSON for mapping services, resulting in an amazing outcome. Throughout the development process, we ensured responsiveness, accessibility, and a seamless user experience. Our website is fully responsive, ensuring an optimal viewing experience across various devices and screen sizes.
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Outcome
+Our hard work and dedication have culminated in a stunning, fully responsive website that showcases the hairdresser salon's services, style, and charm. We're proud of our collaboration and the final product
